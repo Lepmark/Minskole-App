@@ -15,8 +15,36 @@
     <div class="container">
         <div class="box">
             <p> Velg siten du vil logge på.</p>
+            <form id="site-form">
+                <label for="site">Velg siten:</label>
+                <select id="site" name="site" onCha>
+                  <option value="trykkher">Trykk her</option>
+                  <option value="agder">Agder fylkeskommune</option>
+                  <option value="sameyde" ><a href="https://sameyde.vgs.no/"> Sam Eyde VGS</a> </option>
+                  <option value="intern">Intern</option>
+                </select>
+                <input type="submit" value="Gå videre">
+              </form>
         </div>
     </div>
+
+    <script type="text/javascript">
+        let onSubmit = (event)  => {
+            event.preventDefault();
+            let siteselected = document.querySelector("#site").value;
+            if(siteselected === 'agder') {
+                window.location.replace('https://agderfk.no');
+            } else if(siteselected === 'sameyde') {
+                window.location.replace('https://sameyde.vgs.no');
+            } else if(siteselected === 'intern') {
+                window.location.replace('/intern.html');
+            } else {
+                alert('Jeg skjønner ikke!')
+            }
+        };
+        document.querySelector('#site-form').addEventListener("submit", onSubmit);
+    </script>
+
 
 </body>
 

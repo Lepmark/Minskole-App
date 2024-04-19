@@ -5,9 +5,12 @@ body, html {
     background-color: #f7f1ed;
     overflow: hidden;
     min-height: 100%;
+    color: white;
+
 }
 body {
     height: 100vh;
+    background-color: purple;
 }
 
 .container {
@@ -23,6 +26,7 @@ body {
     height: 40vh;
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    background-color: indianred;
 }
 
 .box p {
@@ -30,4 +34,22 @@ body {
     margin: 10px;
     padding: 0px;
     font-size: 25px;
+}
+
+.box form select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    background-color: cyan;
+    border: 1px solid orange;
+}
+
+.box form input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    background-color: lime;
+    border: 1px solid orange;
 }
