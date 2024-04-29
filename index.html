@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Sam Eyde Vgs</title>
 </head>
 <body>
-    <button>Login </button>
-    <button>Log out </button>
+    <!---------------------------------------Login forms-------------------------------->
+    <div class="wrapper-1">
+        <img src="Images/school logo.png">
+        <h1>SAM EYDE VGS</h1>
+        <div class="form-1" id="Form1">
+            <button id="button1"  onclick="displayForm()"> <i class="fa-solid fa-lock"></i> Logg På med Student ID</button>
+            <button id="button2" onclick="displayForm()"> <i class="fa-solid fa-lock"></i>Logg På med ID-Porten</button><br>
+            <a href=""> Logg på med Itslearning</a>
+        </div>
+
+        <div class="form-2" id="Form2">
+            <label for="name" value="Full Name">
+                <input type="text" name="name" id="name" placeholder="Full Name">
+            </label><br>
+            <label for="userId">
+                <input type="number" id="userId" name="userId" placeholder="student Id">
+            </label>
+        </div>
+      </div>
+      
+      <div class="wrapper-2">
+        <h2>Personvernerklæring Agder fylkeskommune</h2>
+        <p>Her kan du lese personvernerklæringen for Agder fylkeskommune. </p><br>
+       <p> Den beskriver hva slags personopplysninger vi samler inn, hvordan vi samler dem inn,
+         hva personopplysningene brukes til, og hvilke rettigheter du har når vi behandler opplysninger om deg.</p>
+
+        <p>  <a href="">https://agderfk.no/om-oss/personvern-gdpr-og-innsyn/personvernerklaring-for-agder-fylkeskommune/</a></p>
+        
+      </div>
+      <footer> 
+        <p> Footer   &copy;Sameyde.no</p>
+        <p>  
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-instagram"></i>
+         <i class="fa-solid fa-school"></i>
+         <i class="fa-solid fa-graduation-cap"></i>
+        </p>
+
+      </footer>
+      <script src="script.js" type="text"></script>
 </body>
 </html>
 
