@@ -5,7 +5,18 @@
     box-sizing: border-box;
 }
 body{
-    background:radial-gradient(#b4b3b3, #dcd5d5);
+    background:radial-gradient(#ddd5d5, #dcd5d5, #eddede);
+    /*   background-image: url(Images/magicpattern-grid.png);    */
+   
+}
+.theme-modes{
+    position: absolute;
+    float: left;
+    top: 5px;
+    right: 5px;
+}
+.theme-modes img{
+    width: 2vw;
 }
 .wrapper-1{
     width: 40vw;
@@ -16,9 +27,9 @@ body{
     justify-content: center;
     text-align: center;
     margin: 5% auto;
+    padding: 0 0 2%;
     right: 0;
-    left: 0; 
-    overflow-y: auto;
+    left: 0;   
 }
 .wrapper-2{
     width: 40vw;
@@ -29,9 +40,9 @@ body{
     margin: 40px auto;
     right: 0;
     left: 0; 
-    padding: 12px;
+    padding:40px;
 }
-.wrapper-1 img{
+.wrapper-1 img.logo{
     width: 6rem;
 }
 .wrapper-2 a::after{
@@ -39,7 +50,8 @@ body{
     height: 0.5px;
     width: 36vw;
    left: 31%;
-   top: 115%;
+   top: 114%;
+   opacity: 0.6;
     position: absolute;
     background: grey;
 }
@@ -48,47 +60,132 @@ body{
 }
 
 
-/*................Login buttons.......................*/
+/*................ form 1.......................*/
 .form-1{
     margin: 16px 0;
 }
-button{
+.form-1 button{
     margin: 8px auto;
-    padding: 6px 12px;
-    width: 30vw;
+    padding: 6px 0;
+    width: 25vw;
     font-size: 18px;
    border-radius: 4px;
-   border: 1px solid grey;
+   border: 1px solid  rgb(183, 179, 179);;
     cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
 }
 
-button i{
+.form-1 button i{
     margin: 0 10px ;
 }
-button:hover{
-    background: grey;
+.form-1 button:hover{
+    background: rgb(183, 179, 179);
     opacity: 0.6;
     transition: 0.4s ease;
 }
 
-
+ /*.....................form 2.........................*/
 .wrapper-1 .form-2{
     display: none;
 }
+
 .wrapper-1 .form-2 input{
     width: 20vw;
     height: 5vh;
     border-radius: 4px;
-    border: 1px solid grey;
+    outline: 1px solid grey;
+    border: none;
     padding: 0 8px;
-    margin: 5px 0;
+    margin: 5px 0; 
+}
+.wrapper-1 .form-2 i.eye{
+    display: none;
+    cursor: pointer;
+    position:absolute;
+    top: 38.6%;
+    left: 61%;
+    bottom: 50%;
+}
+.wrapper-1 .form-2 input:focus{
+    outline: 1px solid orange;
+    border: none;
+}
+::placeholder{
+    font-weight:600;
+}
+/*..................form validation.......................*/
+input:user-invalid{
+    border: 1px solid red;
+   }
+   input:user-invalid::placeholder{
+    color: red;
+}
 
-    
+input:user-valid{
+    border: 1px solid orange;
+    background:rgb(255, 145, 0);
+}
+input+span{
+    color: red;
+    display: none;
+}
+input:user-invalid+span{
+    display: block;
+   
+}
+input:user-invalid{
+    animation: shake 0.1s linear 5;
+}
+@keyframes shake{
+    0%{ transform: translateX(0);}
+
+    25%{ transform: translateX(-2px);}
+
+    50%{ transform: translateX(0);}
+
+    75%{ transform: translateX(2px);}
+
+    100%{ transform: translateX(0);}
+}
+.form-2 button{
+        margin: 8px auto;
+        padding: 6px 12px;
+        width: 20vw;
+        height: 6vh;
+        font-size: 18px;
+       border-radius: 4px;
+       background:rgb(255, 145, 0);
+       border:none;
+       font-weight: bold;
+        cursor: pointer;
+    }
+    .form-2 button:hover{
+        opacity: 0.7;
+        transition: 0.4s ease;
+    }
+    .social-icons img{
+        width: 1.4rem;
+        margin: 2px 2px;
+        cursor: pointer;
+    }
+    /*.....................form 3.........................*/
+.wrapper-1 .form-3{
+    display: none;
+}
+
+.wrapper-1 .form-3 h3{
+   color: brown;
+   margin: 20px 0;
+}
+.wrapper-1 .form-3 a img.back-arrow{
+    width: 3rem;
 }
 /*...........................footer.............................*/
 footer{
     position:relative;
     bottom: 0;
+    padding-top: 12px;
     background: grey;
     width: 100%;
     height: 12vh;
@@ -96,6 +193,7 @@ footer{
 footer p{
     text-align: center;
     text-align: center;
+    font-size: 16px;
     justify-content: center;
 }
 footer p i{
@@ -103,3 +201,96 @@ footer p i{
  margin: 4px 5px;
  cursor: pointer;
 }
+
+
+
+
+
+/* .....................Extra small devices (phones, 600px and down)...................... */
+@media only screen and (max-width: 600px) {
+    .wrapper-1{
+      width: fit-content;
+      width: 90%;
+    }
+    .wrapper-1 .form-1 button{
+        width: fit-content;
+        padding-right:5px ;
+    }
+    .wrapper-1 .form-2 button{
+        width: 20vw;
+        height: 5vh;
+        width: fit-content;
+    }
+    .wrapper-2{
+        width: fit-content;
+        width: 90%;
+        overflow-y: auto;
+    }
+.wrapper-1 .form-2 input{
+    width: fit-content;
+}
+    footer{
+        display: flexbox;
+        position: relative;
+        bottom: -10%;
+        top: 100%;
+    }
+  }
+
+  /* .................Small devices (portrait tablets and large phones, 600px and up).............. */
+@media only screen and (min-width: 600px) {
+    .wrapper-2{
+        width: fit-content;
+        width: 90%;
+        overflow-y: auto;
+    }
+    .wrapper-1{
+        width: fit-content;
+        width: 90%;
+        overflow-y: auto;
+    }
+    .wrapper-1 .form-1 button{
+        width: fit-content;
+        padding-right:5px ;
+    }
+    .wrapper-1 .form-2 button{
+        width: 20vw;
+        height: 5vh;
+        width: fit-content;
+    }
+    .wrapper-2{
+        width: fit-content;
+        width: 90%;
+        overflow-y: auto;
+    }
+.wrapper-1 .form-2 input{
+    width: fit-content;
+}
+  }
+  
+  /* ............Large devices (laptops/desktops, 992px and up) ................*/
+@media only screen and (min-width: 992px) {
+    .wrapper-2{
+        width: 40vw;
+        height: 50vh;
+    }
+    .wrapper-1{
+        width: 40vw;
+        height: 50vh;
+        height: fit-content;
+
+    }
+
+    .wrapper-1 .form-1 button{
+        width: 25vw;
+        height: 5vh;
+    }
+    .wrapper-1 .form-2 input{
+        width: 25vw;
+        height: 5vh;
+    }
+    .wrapper-1 .form-2 button{
+        width: 20vw;
+        height: 5vh;
+    }
+  } 
