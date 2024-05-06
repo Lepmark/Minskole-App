@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="Assets/css/styles.css">
     <link rel="icon" href="Assets/Images/school logo.png" type="image/png">
     <title>Min Skole</title>
@@ -27,22 +28,22 @@
         </div>
 
         <!---------------------------------------Login form-------------------------------------->
-        <form class="form-2" id="Form2" action="" method="POST">
+        <form class="form-2" id="Form2" action="" method="">
+            <div id="signInMessage" class="messageDiv" style="display:none;"></div>
             <label for="text">
-                <input type="text" id="userId" name="userId" placeholder="Student Id" minlength="8" maxlength="11"
-                    required>
+                <input type="email" id="email" name="userId" placeholder="Student Id"  required>
                 <span> <i class="fa-solid fa-circle-exclamation"></i> Student ID not found.</span>
             </label>
 
             <label for="password" value="User Password">
-                <input type="password" name="password" id="name" placeholder="Your Password" required minlength="8"
+                <input type="password" name="password" id="password" placeholder="Your Password" required minlength="8"
                     maxlength="12">
                 <span> <i class="fa-solid fa-circle-exclamation"></i> Password doesnot match with the above ID.</span>
                 <i class="fa-solid fa-eye-slash eye"></i><i class="fa-solid fa-eye eye"></i>
             </label><br>
 
             <a href="">Forgot your Student ID or Password? </a><br>
-            <button>Log In</button>
+            <button id="submitSignIn">Log In</button>
             <div class="social-icons">
                 <p>Or Choose an External Provider:</p>
                 <img src="Assets/Images/google_.png" title="Google" alt="Google">
@@ -79,7 +80,6 @@
             </ul>
         </div>
     </div>
-    
     <footer>
      
         <p> Copyright &copy;Sameyde.no, incl.</p>
