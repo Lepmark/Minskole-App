@@ -102,11 +102,49 @@ signIn.addEventListener('click',(event)=>{
   .catch((error)=>{
     const errorCode = error.code;
     if (errorCode=='auth/invalid-credential'){
-      showMessage('Incorrect Email or Password', 'signInMessage');
+      showMessage('<i class="fa-solid fa-circle-exclamation"></i> Incorrect Email or Password', 'signInMessage');
     }
     else{
-      showMessage('Account doesnot Exist.!', 'signInMessage');
+      showMessage('<i class="fa-solid fa-circle-exclamation"></i> Account doesnot Exist.!', 'signInMessage');
     }
   });
 });
 
+
+//Functions to allow users reset their forgotten passwords.....................
+
+// Function to handle password reset
+const handlePasswordReset = (email) => {
+  const auth = getAuth();
+
+  // Send password reset email
+  sendPasswordResetEmail(auth, email)
+    .then(() => {
+      // Password reset email sent successfully
+      alert("Password reset email has been sent. Please check your email inbox.");
+    })
+    .catch((error) => {
+      // Error occurred while sending password reset email
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.error("Error sending password reset email:", errorCode, errorMessage);
+      alert("An error occurred. Please try again later.");
+    });
+};
+
+// Event listener for "Forgot Password" button
+const forgotPasswordButton = document.getElementById("forgotPasswordButton");
+if (forgotPasswordButton) {
+  forgotPasswordButton.addEventListener("click", () => {
+    // Prompt the user to enter their email address
+    const email = prompt("Please enter your email address:");
+
+    // Check if email is provided and not empty
+    if (email) {
+      // Call function to handle password reset
+      handlePasswordReset(email);
+    } else {
+      alert("Please provide a valid email address.");
+    }
+  });
+}

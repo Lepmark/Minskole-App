@@ -15,3 +15,31 @@ function displayForm3(){
     Form2.style.display = "none";
     Form3.style.display = "block";
 }
+
+
+
+//function to send a password reset form using web3forms ........
+
+document.getElementById("forgotPasswordForm").addEventListener("submit", function(event){
+    event.preventDefault(); //prevent form from submission....
+
+    //get the value of the sender's name from the input....
+    //initiate variable senderName.......
+    let senderName = '';
+//.....Loop the while function until a valid name is provided
+    while (!senderName){
+       senderName = prompt("Please Enter your Name:");
+//.....show alert until senderName is not empty.....
+       if (!senderName){
+        alert("Please Enter your name to Proceed");
+    }
+    }
+
+    //update the default value of the hidden input field "subject" to the name of the sender
+    document.getElementById("senderName").value = `${senderName} is requesting a New Password for their Account!`;
+
+
+    //then submit the form...
+    this.submit();
+
+});
