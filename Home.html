@@ -9,95 +9,187 @@
     <title>Min skole</title>
 </head>
 <body>
-    <div class="section-1">
-        <div class="school-logo">
+    <div class="navbar">
+        <div class="school-logo column-1">
             <a href="index.html"> <img src="Assets/Images/school logo.png" class="logo"></a>
-            <h2>Min Skole</h2>
+            <h2> <a href="">  Min Skole </a></h2>
         </div>
-        <div class="lang">
+
+<div class="nav-links column-2" >
+    <ul> 
+<li>Educational Offers</li>
+<li onclick="displayStudentsPage()" id="studentsPageLink">For Students</li>
+<li onclick="displayOurSchoolPage()" id="ourSchoolLink">Our School</li>
+    </ul>
+
+</div>
+
+<div class="lang column-3">
             <select>
                 <option value="English">English</option>
                 <option value="Norsk">Norsk</option>
             </select>
-             
-        </div>
+            <!--------------------------------------------------
+                <div class="webPart google-translate-container" id="ctl00_ctl00_ctl00_innhold_ctl04_WebpartId_909">
+		<div class="webPartInnhold">
+			
 
-    </div>
+<div id="google_translate_element"></div>
+<script>
+    function googleTranslateElementInit()
+    {
+        new google.translate.TranslateElement(
+        {
+            pageLanguage: 'en',
+            includedLanguages: '',
+            autodisplay: false,
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            multilanguagePage: true
+        }
+        , 'google_translate_element');
+    }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		</div>
+	</div> ------------------------------------------------------------->
+</div></div>
     
 
+<main class="main-page" id="mainPage">
+    <div class="section-1">
+        <div class="column-1">
+            <h1>Welcome to Sam Eyde Videragånde School</h1>
+            <form action="" method="">
+                <label for="searchbox">
+                <input type="search" placeholder="What are you looking for ..?" id="searchBox" name="search" >
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </label>
+            </form>
+        <div class="search-lists">
+            <a href="">School Routine</a>
+            <a href="">It's Learning</a>
+            <a href="">Library</a>
+            <a href="">Visma InSchool</a>
+            <a href="">School Calender</a>
+        </div>
+    </div>
+    <div class="column-2">
+        <img src="Assets/Images/Educator.png">
+    </div>
+   
+</div>
 
+<div class="section-2">
+    <h1>What's happening?</h3>
+    <div class="column-1">
+        <span>12 June</span>
+    </div>
 
+    <div class="column-2">
+        <p>Summer Market</p>
+        <p>Kl 11:00 - 16:30 |</p>
+        <p>Sam Eyde Vgs.</p>
+    </div>
+</div>
 
+</main>
+<!--------------------------------student page------------------------------------------->
+<div class="for-students" id="studentsPage">
+    <div class="column-1">
+        <h1>For Students</h1>
+    </div>
+    <div class="column-2">
+       <a href=""><i class="fa-solid fa-arrow-right"> </i>Exams and Grades</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>Help and Advice</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>Everyday School</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>Student Council and Committee</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>Rules and Regulations</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>Others</a> <br>
+<hr>
+       <div class="user-feedback">
+        <h2>Did you get what you were looking for?</h2>
+        <div class="feedback-buttons">
+            <button class="btn-1">YES</button>
+            <button class="btn-2">No</button>
+        </div>
+       
+    </div>
+    </div>
+ 
+</div>
 
-
+<!--------------------------------our school page------------------------------------------->
+<div class="our-school" id="ourSchool">
+    <div class="column-1">
+        <h1>Our School</h1>
+    </div>
+    <div class="column-2">
+       <a href=""><i class="fa-solid fa-arrow-right"> </i>School Map</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>School Library</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>Everyday School</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>HMS</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>About school</a><br>
+       <a href=""><i class="fa-solid fa-arrow-right"></i>Others</a> <br>
+<hr>
+       <div class="user-feedback">
+        <h2>Did you get what you were looking for?</h2>
+        <div class="feedback-buttons">
+            <button class="btn-1">YES</button>
+            <button class="btn-2">No</button>
+        </div>
+       
+    </div>
+    </div>
+ 
+</div>
 
 
 
     
 <!-------------------------------------------------------Footer ----------------------------------->
-<footer class="support-footer">
-    <p> Copyright &copy;Sameyde.no, incl.</p>
-    <p>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-school"></i>
-        <i class="fa-solid fa-graduation-cap"></i>
-    </p>
-    <p>Developed by; <b> 1-IMA, 2024 </b></p>
+<footer>
+    
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h2>Contact Us</h4>
+            <h4> Tel: <a href=""> +47-604-9572</a></h4>
 
-
-
-</footer>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
-    <defs>
-        <linearGradient id="bg">
-            <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
-            <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
-            <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
-        </linearGradient>
-        <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
-s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
-    </defs>
-    <g>
-        <use xlink:href='#wave' opacity=".3">
-            <animateTransform
-      attributeName="transform"
-      attributeType="XML"
-      type="translate"
-      dur="10s"
-      calcMode="spline"
-      values="270 230; -334 180; 270 230"
-      keyTimes="0; .5; 1"
-      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-      repeatCount="indefinite" />
-        </use>
-        <use xlink:href='#wave' opacity=".6">
-            <animateTransform
-      attributeName="transform"
-      attributeType="XML"
-      type="translate"
-      dur="8s"
-      calcMode="spline"
-      values="-270 230;243 220;-270 230"
-      keyTimes="0; .6; 1"
-      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-      repeatCount="indefinite" />
-        </use>
-        <use xlink:href='#wave' opacty=".9">
-            <animateTransform
-      attributeName="transform"
-      attributeType="XML"
-      type="translate"
-      dur="6s"
-      calcMode="spline"
-      values="0 230;-140 200;0 230"
-      keyTimes="0; .4; 1"
-      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-      repeatCount="indefinite" />
-        </use>
-    </g>
-</svg>
+        <ul>
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>About Us</h2>
+        <ul>
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Visit Us</h2>
+        <p>Østensbuveien 80, 4848 Arendal</p>
+       
+        <p><iframe allowfullscreen="" frameborder="0" height="200" width="250"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2085.7894863596707!2d8.721712316010592!3d58.481216481370154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464794c3cc8a9ccd%3A0xee8dfbab565a402!2sSam%20Eyde%20videreg%C3%A5ende%20skole!5e0!3m2!1sno!2sno!4v1575018634133!5m2!1sno!2sno" style="border:0;"></iframe></p>
+    
+      </div>
+      <div class="footer-column">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-school"></i>
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+      </div>
+    </div>
+    <P>Design and Development:</P>
+    <P>1-IMA 2024</P>
+  </footer>
+  
 
 
 <script src="Assets/JS/script.js"></script>

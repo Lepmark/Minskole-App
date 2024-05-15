@@ -17,7 +17,29 @@ function displayForm3(){
 }
 
 
+// functions to display navbar pages .......................
+var studentsPage = document.getElementById("studentsPage");
+var studentsPageLink = document.getElementById("studentsPageLink");
+var mainPage = document.getElementById("mainPage");
+var ourSchool = document.getElementById("ourSchool");
+var ourSchoolLink = document.getElementById("ourSchoolLink");
 
+function displayStudentsPage(){
+    studentsPage.style.display = "block";
+    studentsPageLink.style.color = "brown";
+    ourSchoolLink.style.color= "black";
+    mainPage.style.display ="none";
+    ourSchool.style.display = "none";
+
+}
+function displayOurSchoolPage(){
+    studentsPage.style.display = "none";
+    mainPage.style.display ="none";
+    ourSchool.style.display = "block";
+    ourSchoolLink.style.color= "brown";
+    studentsPageLink.style.color = "black";
+     
+}
 //function to send a password reset form using web3forms ........
 
 document.getElementById("forgotPasswordForm").addEventListener("submit", function(event){

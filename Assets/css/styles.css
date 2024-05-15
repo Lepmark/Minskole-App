@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background:#dedad2;
+    background:#dddbd9;
     /*   background-image: url(Images/magicpattern-grid.png);    */
    
 }
@@ -62,6 +62,25 @@ body{
     text-align: center; 
 }
 
+.wrapper-2 .useful-links{
+    position: relative;
+
+}
+.wrapper-2 .useful-links ul{
+ display: flex;
+ text-align: center;
+}
+
+.wrapper-2 .useful-links ul li{
+    list-style: none;
+    margin: 12px 12px;
+}
+
+.wrapper-2 .useful-links ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: space-between;
+}
 
 /*................ form 1.......................*/
 .form-1{
@@ -263,8 +282,316 @@ input:user-invalid{
 .container form button.submit-btn:hover{
     opacity: 1;
 }
+
+/*..........................................................Home page...............................*/
+.navbar{
+    background-color:rgb(213, 204, 225);
+    height: 13vh;
+    display: flex;
+}
+
+.navbar .school-logo{
+    display: flex;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+}
+.navbar .school-logo img{
+    width: 5vw;
+}
+
+.navbar .school-logo h2{
+    font-size: 30px;
+   text-align: center;
+   margin: auto;
+    padding: 0 12px;
+}
+.navbar .school-logo h2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+.navbar .school-logo h2 a:hover{
+    opacity: 0.6;
+    transition: 0.2s;
+}
+.navbar .lang{
+text-align: center;
+margin-top: 2%;
+}
+
+.navbar .lang select{
+    width: auto;
+    padding: 2px 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    outline: 0;
+    background: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-links{
+    display:inline-flex;
+    margin: auto;
+}
+.nav-links ul{
+    display: flex;
+}
+.nav-links ul li{
+    margin: 0 50px ;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-weight:600;
+    list-style: none;
+    cursor: pointer;
+}
+.nav-links ul li:hover{
+    color: brown;
+}
+/*.......................................................main page....................*/
+.main-page .section-1{
+    background: none;
+    display: flex;
+    box-shadow: 1px 1px 8px rgb(226, 225, 225);
+    height: auto;
+}
+.main-page .section-1 .column-1{
+    padding: 12px;
+    margin: auto;
+}
+.main-page .section-1 .column-1 form{
+    margin: 36px auto;
+}
+.main-page .section-1 .column-1 form input{
+    width: 100%;
+    height: 7vh;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    background: rgb(227, 226, 226);
+    padding: 0 12px;
+}
+.main-page .section-1 .column-1 form input:focus, .main-page .section-1 .column-1 form input:hover{
+    background: none;
+}
+
+.main-page .section-1 .column-1 form label button{
+    position: absolute;
+    height: 5vh;
+    width: 45px;
+    border-radius: 5px ;
+    margin-left: -55px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid orangered;
+    background: orangered;
+}
+.main-page .section-1 .column-1 form label button i{
+    font-size: 18px;
+}
+.main-page .section-1 .column-1 form label button:hover{
+    background: none;
+    transition: 0.4s;
+}
+.main-page .section-1 .column-1 a{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid orange;
+    color: black;
+    height: 30px;
+    padding: 10px;
+    margin: 12px 10px ;
+    background: rgb(255, 89, 29);
+}
+.main-page .section-1 .column-1 a:hover{
+background: none;
+transition-duration: 0.4s;
+}
+/*............................section 2-----------..................*/
+
+.main-page .section-2{
+    box-shadow: 1px 2px 4px grey;
+    padding: 12px 24px ;
+    height: 40vh;
+}
+
+.main-page .section-2 .column-1{
+  margin: 5% 2%;
+}
+
+.main-page .section-2 .column-1 span{
+    background: orangered;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.main-page .section-2 .column-2{
+   float: right;
+   margin-top: -10% ;
+   margin-left: -70%;
+}
+
+/*...............................................for students page.....................*/
+
+.for-students {
+    margin-bottom: 10%;
+    display: none;
+}
+
+.for-students .column-1{
+background: rgb(233, 230, 230);
+width: 100%;
+height: 20vh;
+display: flex;
+}
+.for-students .column-1 h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 40px;
+}
+.for-students .column-2{
+    background: whitesmoke;
+    height: 60vh;
+    width: 100%;
+}
+
+.for-students .column-2 a{
+    display: flex;
+    margin: 0 25px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+.for-students .column-2 a:hover{
+    color: brown;
+}
+.for-students .column-2 a i{
+    margin: 0 16px;
+    color: orangered;
+    width: 50px;
+    font-size: 20px;
+    transform: linear 0.4s;
+    transition-duration: 0.5s;
+}
+.for-students .column-2 a:hover i{
+  transform: translateX(12px);
+}
+.for-students .column-2 .user-feedback{
+    margin:auto ;
+    position: absolute;
+    display: block;
+    left: 45%;
+}
+.for-students .column-2 .user-feedback .feedback-buttons{
+    display: flex;
+   margin: 2% 20%;
+}
+.for-students .column-2 .user-feedback button{
+    width: 75px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    margin: 6px 12px;
+    cursor: pointer;
+}
+.user-feedback button.btn-1{
+    background: orangered;
+}
+.user-feedback button.btn-1:hover{
+    background: none;
+}
+.user-feedback button.btn-2:hover{
+    background: orangered;
+}
+
+
+/*...............................................our school page.....................*/
+.our-school{
+    display: none;
+}
+.our-school .column-1{
+    background: rgb(233, 230, 230);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    }
+    .our-school .column-1 h1{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 40px;
+    }
+    .our-school .column-2{
+        background: whitesmoke;
+        height: 60vh;
+        width: 100%;
+    }
+    .our-school .column-2 a{
+        display: flex;
+        margin: 0 25px;
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .our-school .column-2 a:hover{
+        color: brown;
+    }
+    .our-school .column-2 a i{
+        margin: 0 16px;
+        color: orangered;
+        width: 50px;
+        font-size: 20px;
+        transform: linear 0.4s;
+        transition-duration: 0.5s;
+    }
+    .our-school .column-2 a:hover i{
+      transform: translateX(12px);
+    }
+    .our-school .column-2 .user-feedback{
+        margin:auto ;
+        position: absolute;
+        display: block;
+        left: 45%;
+    }
+    .our-school .column-2 .user-feedback .feedback-buttons{
+        display: flex;
+       margin: 2% 20%;
+    }
+    .our-school .column-2 .user-feedback button{
+        width: 75px;
+        height: 32px;
+        font-size: 18px;
+        font-weight: 600;
+        border: 1px solid orangered;
+        border-radius: 5px;
+        margin: 6px 12px;
+        cursor: pointer;
+    }
+    .user-feedback button.btn-1{
+        background: orangered;
+    }
+    .user-feedback button.btn-1:hover{
+        background: none;
+    }
+    .user-feedback button.btn-2:hover{
+        background: orangered;
+    }
+    
 /*...........................footer.............................*/
-footer{
+.footer-1{
     position:relative;
     bottom: 0;
     padding-top: 12px;
@@ -273,45 +600,85 @@ footer{
     height: 20vh;
     display: flex;
 }
-footer p{
+.footer-1 p{
     text-align: center;
     text-align: center;
     font-size: 16px;
     justify-content: center;
     margin: auto;
 }
-footer p i{
+.footer-1 p i{
  font-size: 20px;  
  margin: 4px 5px;
  cursor: pointer;
 }
+/*....................footer for main page....................*/
 
-.wrapper-2 .useful-links{
-    position: relative;
-
-}
-.wrapper-2 .useful-links ul{
- display: flex;
- text-align: center;
-}
-
-.wrapper-2 .useful-links ul li{
-    list-style: none;
-    margin: 12px 12px;
-}
-
-.wrapper-2 .useful-links ul li a{
-    text-decoration: none;
-    font-size: 16px;
+footer {
+    padding: 20px 0;
+    background: #090d14;
+    color: white;
+    width: 100%;
+  }
+  
+  .footer-columns {
+    display: flex;
     justify-content: space-between;
-}
+    flex-wrap: wrap;
+    margin: 0 0 60px;
+  }
+  
+  .footer-column {
+    width: 20%; /* Adjust the width as needed */
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 20px;
+  }
+  .footer-column .social-icons{
+    display: grid;
+    margin: 0 5%;
+  }
+  .footer-column .social-icons i{
+    margin: 12px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .footer-column .social-icons i:hover{
+    color: brown;
+  }
+  .footer-column h2 {
+    color: #faf7f7;
+    margin: 0 0 24px;
+  }
+
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-column ul li:hover{
+    color: brown;
+  }
+
 footer .useful-links ul li{
     list-style-type:none;
     margin: 12px 0;
 }
-
-
-   
+.footer-columns::after{
+    content: '';
+    width: 75%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    bottom: -60%;
+    left: 12%;
+}
 /*.............................Support page........................................*/
 .section-1{
     background-color:rgb(164, 151, 182);
@@ -386,6 +753,7 @@ footer .useful-links ul li{
 footer.support-footer{
     position: absolute;
     bottom: 0;
+    margin-bottom: -10%;
     z-index: 2;
     background: none;
 }
@@ -398,12 +766,12 @@ footer.support-footer{
     bottom: 0;
     width: 100%;
     height:30%;
-		box-sizing: border-box;
-		display: block;
-        background:radial-gradient(transparent to top, rgb(119, 120, 208));
+    margin-bottom: -10%;
+	box-sizing: border-box;
+	display: block;
+    background:radial-gradient(transparent to top, rgb(119, 120, 208));
    
 	}
-
 
 
 
