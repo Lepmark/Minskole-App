@@ -632,7 +632,7 @@ footer {
     width: 20%; /* Adjust the width as needed */
     padding: 0 15px;
     box-sizing: border-box;
-    margin: 0 20px;
+    margin: 0 24px;
   }
   .footer-column .social-icons{
     display: grid;
@@ -678,6 +678,14 @@ footer .useful-links ul li{
     position: absolute;
     bottom: -60%;
     left: 12%;
+}
+.other-icons{
+margin: auto;
+}
+.other-icons img{
+    width: 50px;
+    margin: 0 30px;
+    cursor: pointer;
 }
 /*.............................Support page........................................*/
 .section-1{
