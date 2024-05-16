@@ -13,12 +13,20 @@
  
 </style>
 <body>
-    <div class="section-1">
+    <div class="section-1 navbar">
         <div class="school-logo">
             <a href="index.html"> <img src="Assets/Images/school logo.png" class="logo"></a>
-            <h2>Min Skole</h2>
+            <h2> <a href="Home.html">  Min Skole </a></h2>
         </div>
-        <div class="lang">
+        <div class="nav-links column-2" >
+            <ul> 
+        <li>Educational Offers</li>
+        <li onclick="displayStudentsPage()" id="studentsPageLink">For Students</li>
+        <li onclick="displayOurSchoolPage()" id="ourSchoolLink">Our School</li>
+            </ul>
+        
+        </div>
+        <div class="lang column-3">
             <select>
                 <option value="English">English</option>
                 <option value="Norsk">Norsk</option>
@@ -28,18 +36,22 @@
 
     </div>
 
-<div class="search-section">
+<div class="search-setion">
 
-<form action="" method="get">
-    <div class="support-image">
-<img src="Assets/Images/school logo.png" alt="">
+    <main class="main-page" id="mainPage">
+        <div class="section-1">
+            <div class="column-1">
+        <h1>Hei, how can we help you today?</h1>
+                <form action="" method="">
+                    <label for="searchbox">
+                    <input type="search" placeholder="What are you looking for ..?" id="searchBox" name="search" >
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </label>
+                </form>
+
     </div>
-
-    <h2>Hi, How can we help you today?</h2>
-    <input type="search" placeholder="Search here...">
-</form>
-    </div>
-
+    <img src="Assets/Images/Instant_support_re_s7un.png">
+  
 
 <!-------------------------------------------------------Footer ----------------------------------->
     <footer class="support-footer">
@@ -103,6 +115,7 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
         </use>
     </g>
 </svg>
+
 
 <script src="Assets/JS/script.js"></script>
 </body>
