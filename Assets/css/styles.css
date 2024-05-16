@@ -753,12 +753,27 @@ footer .useful-links ul li{
 footer.support-footer{
     position: absolute;
     bottom: 0;
-    margin-bottom: -10%;
+    margin-bottom: -8%;
     z-index: 2;
     background: none;
+    display: flex;
 }
 
-
+footer.support-footer p{
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+    justify-content: space-between;
+}
+footer.support-footer p i{
+    justify-content: space-evenly;
+    margin: 0 12px;
+    cursor: pointer;
+}
+footer.support-footer p i:hover{
+    color: rgb(232, 185, 185);
+    transition: 0.2s;
+}
 	svg {
 	position: absolute;
 	left: 0;
